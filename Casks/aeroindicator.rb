@@ -2,14 +2,14 @@
 # frozen_string_literal: true
 
 cask "aeroindicator" do
-  version "1.0.1"
-  sha256 "58a1c47bac1c33cf8d7b01c1a6ca96886fdc4e18741cb22c3f8f06a955ad77b6"
+  version "1.0.2"
+  sha256 "440b13a6083d635a3a021eb16b0886294562f55550b781b8bad62d958a9ecba4"
 
   url "https://github.com/rien7/AeroIndicator/releases/download/v#{version}/AeroIndicator.zip"
   name "AeroIndicator"
   desc "Application to indicate the aerospace workspace"
   homepage "https://github.com/rien7/AeroIndicator"
 
-  app "AeroIndicator.app"
-  binary "#{appdir}/AeroIndicator.app/Contents/Resources/aeroIndicator_universal", target: "aeroIndicator"
+  artifact "AeroIndicator.app", target: "#{HOMEBREW_PREFIX}/opt/aeroIndicator/AeroIndicator.app"
+  binary "#{appdir}/AeroIndicator.app/Contents/MacOS/AeroIndicator", target: "aeroIndicator"
 end
