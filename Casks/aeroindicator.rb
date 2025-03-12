@@ -3,7 +3,7 @@
 
 cask "aeroindicator" do
   version "1.0.3"
-  sha256 "76256f9db1b5034cd07ecff1bd74da2c060939e48bba0d8f38f92a6679c1f968"
+  sha256 "e63294ce4b088592549772cfad86809d760c228dc84946af1684d328afb12544"
 
   url "https://github.com/rien7/AeroIndicator/releases/download/v#{version}/AeroIndicator.zip"
   name "AeroIndicator"
