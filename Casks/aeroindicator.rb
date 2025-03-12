@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 cask "aeroindicator" do
-  version "1.0.0"
-  sha256 "ef7dbc430a18c91c38be5cc3f6ee69c3f4f0e4fc9726ef5c3ee2708378ff3057"
+  version "1.0.1"
+  sha256 "58a1c47bac1c33cf8d7b01c1a6ca96886fdc4e18741cb22c3f8f06a955ad77b6"
 
   url "https://github.com/rien7/AeroIndicator/releases/download/v#{version}/AeroIndicator.zip"
   name "AeroIndicator"
@@ -11,5 +11,5 @@ cask "aeroindicator" do
   homepage "https://github.com/rien7/AeroIndicator"
 
   app "AeroIndicator.app"
-  binary "#{appdir}/AeroIndicator.app/Contents/Resources/aeroIndicator", target: "aeroIndicator"
+  binary "#{appdir}/AeroIndicator.app/Contents/Resources/aeroIndicator_universal", target: "aeroIndicator"
 end
