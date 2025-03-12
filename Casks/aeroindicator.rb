@@ -11,5 +11,5 @@ cask "aeroindicator" do
   homepage "https://github.com/rien7/AeroIndicator"
 
   artifact "AeroIndicator.app", target: "#{HOMEBREW_PREFIX}/opt/aeroIndicator/AeroIndicator.app"
-  binary "#{appdir}/AeroIndicator.app/Contents/MacOS/AeroIndicator", target: "aeroIndicator"
+  binary "#{HOMEBREW_PREFIX}/opt/aeroIndicator/AeroIndicator.app/Contents/MacOS/AeroIndicator", target: "aeroIndicator"
 end
